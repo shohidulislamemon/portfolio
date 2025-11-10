@@ -1,116 +1,16 @@
-# Personal Portfolio Website
+# React + Vite
 
-A modern, responsive portfolio website built with React and Vite. This single-page application showcases professional experience, projects, skills, and contact information with a clean, dark-themed design.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## 🚀 Features
+Currently, two official plugins are available:
 
-- Responsive layout for all devices
-- Dark theme with custom color variables
-- Smooth scrolling and animations
-- Interactive navigation
-- Multiple sections:
-  - About with services and testimonials
-  - Portfolio with filterable projects
-  - Resume with timeline and skills
-  - Contact form
-- Sidebar with personal info and social links
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## 🛠️ Built With
+## React Compiler
 
-- React 19
-- Vite 7
-- React Router
-- React Icons
-- CSS3 with custom properties
-- CSS Grid and Flexbox for layouts
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## 🏃‍♂️ Getting Started
+## Expanding the ESLint configuration
 
-### Prerequisites
-
-- Node.js (version 16 or higher)
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/shohidulislamemon/portfolio.git
-```
-
-2. Navigate to project directory:
-```bash
-cd portfolio-website
-```
-
-3. Install dependencies:
-```bash
-npm install
-```
-
-4. Start development server:
-```bash
-npm run dev
-```
-
-5. Build for production:
-```bash
-npm run build
-```
-
-## 🔧 Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Lint code with ESLint
-
-## 📁 Project Structure
-
-```
-portfolio-website/
-├── public/
-│   ├── projects.json
-│   ├── services.json
-│   └── testimonials.json
-├── src/
-│   ├── components/
-│   │   ├── Navbar.jsx
-│   │   └── Sidebar.jsx
-│   ├── pages/
-│   │   ├── About/
-│   │   ├── Contact/
-│   │   ├── Portfolio/
-│   │   └── Resume/
-│   ├── App.jsx
-│   └── main.jsx
-└── index.html
-```
-
-## 🎨 Customization
-
-1. Update personal information in the JSON files under the `public` directory
-2. Modify color schemes in `src/App.css` (look for `:root` variables)
-3. Add/modify components in the `src/components` directory
-4. Update page content in the `src/pages` directory
-
-## 📱 Responsive Design
-
-The website is fully responsive with breakpoints at:
-- 450px - Small devices
-- 580px - Medium devices
-- 768px - Tablets
-- 1024px - Desktop
-- 1250px - Large desktop
-
-## 🚥 Status
-
-Project is: _in development_
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 📬 Contact
-
-Created by [@shohidulislamemon](https://github.com/shohidulislamemon) - feel free to contact me!
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
