@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
-import { FaRegEye } from "react-icons/fa";
+import { FaRegEye, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const Portfolio = () => {
     const [projects, setProjects] = useState([]);
     const [filteredProjects, setFilteredProjects] = useState([]);
     const [selectedCategory, setSelectedCategory] = useState("All");
+
     useEffect(() => {
         fetch("/projects.json")
             .then((response) => response.json())
@@ -71,6 +72,44 @@ const Portfolio = () => {
                                 <h3 className="project-title">{project.title}</h3>
                                 <p className="project-category">{project.category}</p>
                             </a>
+
+                            <div className="project-links" style={{ marginTop: 8 }}>
+                                {project.github ? (
+                                    <a
+                                        className="project-link-btn"
+                                        href={project.github}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label={`${project.title} GitHub`}
+                                    >
+                                        <FaGithub />
+                                        <span className="project-link-text">GitHub</span>
+                                    </a>
+                                ) : (
+                                    <button className="project-link-btn disabled" aria-disabled="true">
+                                        <FaGithub />
+                                        <span className="project-link-text">GitHub</span>
+                                    </button>
+                                )}
+
+                                {project.live ? (
+                                    <a
+                                        className="project-link-btn"
+                                        href={project.live}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label={`${project.title} Live demo`}
+                                    >
+                                        <FaExternalLinkAlt />
+                                        <span className="project-link-text">Live</span>
+                                    </a>
+                                ) : (
+                                    <button className="project-link-btn disabled" aria-disabled="true">
+                                        <FaExternalLinkAlt />
+                                        <span className="project-link-text">Live</span>
+                                    </button>
+                                )}
+                            </div>
                         </li>
                     ))}
                 </ul>

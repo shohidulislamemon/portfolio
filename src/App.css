@@ -936,6 +936,33 @@ main {
   font-weight: var(--fw-300);
 }
 
+/* Project card link/button styles added for GitHub and Live buttons */
+.project-card { display: flex; gap: 12px; align-items: flex-start; }
+.project-body { flex: 1; }
+.project-links {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+.project-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: var(--border-gradient-onyx);
+  color: var(--light-gray-70);
+  font-size: var(--fs-7);
+  border: 1px solid var(--jet);
+  transition: var(--transition-1);
+}
+.project-link-btn:hover { background: var(--bg-gradient-yellow-1); color: var(--white-2); }
+.project-link-btn.disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.project-link-text { display: inline-block; }
+
 
 
 
@@ -1158,7 +1185,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .project-img,
-  .blog-banner-box { height: auto; }
+  .blog-banner-box { height: 200px; }
 
 }
 

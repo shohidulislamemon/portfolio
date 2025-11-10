@@ -1,57 +1,50 @@
 [
-    {
-      "id": 1,
-      "title": "Finance",
-      "category": "Web development",
-      "image": "images/project-1.jpg"
-    },
-    {
-      "id": 2,
-      "title": "Orizon",
-      "category": "Web development",
-      "image": "images/project-2.png"
-    },
-    {
-      "id": 3,
-      "title": "Fundo",
-      "category": "Web design",
-      "image": "images/project-3.jpg"
-    },
-    {
-      "id": 4,
-      "title": "Brawlhalla",
-      "category": "Applications",
-      "image": "images/project-3.jpg"
-    },
-    {
-      "id": 5,
-      "title": "DSM.",
-      "category": "Web design",
-      "image": "images/project-5.png"
-    },
-    {
-      "id": 6,
-      "title": "MetaSpark",
-      "category": "Web design",
-      "image": "images/project-6.png"
-    },
-    {
-      "id": 7,
-      "title": "Summary",
-      "category": "Web development",
-      "image": "images/project-7.png"
-    },
-    {
-      "id": 8,
-      "title": "Task Manager",
-      "category": "Applications",
-      "image": "images/project-8.jpg"
-    },
-    {
-      "id": 9,
-      "title": "Arrival",
-      "category": "Web development",
-      "image": "images/project-9.png"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "title": "Alumni Management",
+    "category": "Web development",
+    "image": "images/project-main.jpg",
+    "github": "https://github.com/Final4357/Alumni-Management-MERN",
+    "live": "https://iiuc-alumni.onrender.com/"
+  },
+  {
+    "id": 2,
+    "title": "Testimonials grid section",
+    "category": "Web design",
+    "image": "https://raw.githubusercontent.com/shohidulislamemon/Testimonials-grid-section/main/preview.jpg",
+    "github": "https://github.com/shohidulislamemon/Testimonials-grid-section",
+    "live": "https://shohidulislamemon.github.io/Testimonials-grid-section/"
+  },
+  {
+    "id": 3,
+    "title": "Four card feature section",
+    "category": "Web design",
+    "image": "https://raw.githubusercontent.com/shohidulislamemon/Four-card-feature-section/main/design/desktop-design.jpg",
+    "github": "https://github.com/shohidulislamemon/Four-card-feature-section",
+    "live": "https://shohidulislamemon.github.io/Four-card-feature-section/"
+  },
+  {
+    "id": 4,
+    "title": "Stats preview card component",
+    "category": "Web design",
+    "image": "https://raw.githubusercontent.com/shohidulislamemon/Stats-preview-card-component/main/preview.jpg",
+    "github": "https://github.com/shohidulislamemon/Stats-preview-card-component",
+    "live": "https://shohidulislamemon.github.io/Stats-preview-card-component/"
+  },
+  {
+    "id": 5,
+    "title": "Product preview card component",
+    "category": "Web design",
+    "image": "https://raw.githubusercontent.com/shohidulislamemon/Product-preview-card-component/main/design/desktop-design.jpg",
+    "github": "https://github.com/shohidulislamemon/Product-preview-card-component",
+    "live": "https://shohidulislamemon.github.io/Product-preview-card-component/"
+  },
+  {
+    "id": 6,
+    "title": "Recipe page",
+    "category": "Web development",
+    "image": "https://raw.githubusercontent.com/shohidulislamemon/Recipe-page/main/design/desktop-design.jpg",
+    "github": "https://github.com/shohidulislamemon/Recipe-page",
+    "live": "https://shohidulislamemon.github.io/Recipe-page/"
+  }
+]
