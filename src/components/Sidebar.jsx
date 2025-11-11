@@ -1,8 +1,13 @@
+import { useState } from "react";
 import { GiCalendar, GiClawSlashes, GiMailbox, GiPhone, GiRoad } from "react-icons/gi";
 
 const Sidebar = () => {
+  const [open, setOpen] = useState(false);
+
+  const toggleOpen = () => setOpen((v) => !v);
+
   return (
-    <aside className="sidebar">
+    <aside className={`sidebar ${open ? "active" : ""}`}>
       <div className="sidebar-info">
         <figure className="avatar-box">
           <img src="/images/emon.jpg" alt="" width="80" />
@@ -11,14 +16,19 @@ const Sidebar = () => {
           <h1 className="name">Shohidul Islam</h1>
           <p className="title">Web Developer</p>
         </div>
-        <button className="info_more-btn">
-          <span>Show Contacts</span>
+        <button
+          className={`info_more-btn ${open ? "active" : ""}`}
+          onClick={toggleOpen}
+          aria-expanded={open}
+          aria-controls="sidebar-contacts"
+        >
+          <span>{open ? "Hide Contacts" : "Show Contacts"}</span>
           <GiClawSlashes />
         </button>
       </div>
 
       {/* contact-info */}
-      <div className="sidebar-info_more">
+      <div id="sidebar-contacts" className="sidebar-info_more">
         <hr className="separator2" />
         <ul className="contacts-list">
           <li className="contact-item">
